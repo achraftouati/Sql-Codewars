@@ -7,7 +7,7 @@ Write a function that will take the number of petals of each flower and return t
 select flower1,flower2,(flower1 + flower2) % 2=1 as res from love;
 
 --# other solution 
-select flower1, flower2 
+select flower1, flower2, 
   case 
     when mod(flower1,2)=0 and mod(flower2,2) <> 0 then true
     when mod(flower2,2) =0 and mod(flower1,2) <> 0 then true
